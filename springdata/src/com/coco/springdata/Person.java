@@ -16,12 +16,12 @@ public class Person {
 	private Integer id;
 	private String lastName;
 
-	private String address;
+	// private String address;
 
 	private String email;
 	private Date birth;
 
-	private Address addresses;
+	private Address address;
 
 	@GeneratedValue
 	@Id
@@ -41,13 +41,13 @@ public class Person {
 		this.lastName = lastName;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
+	// public String getAddress() {
+	// return address;
+	// }
+	//
+	// public void setAddress(String address) {
+	// this.address = address;
+	// }
 
 	public String getEmail() {
 		return email;
@@ -65,20 +65,20 @@ public class Person {
 		this.birth = birth;
 	}
 
-	@JoinColumn(name="ADDRESS_ID")
+	@JoinColumn(name = "ADDRESS_ID")
 	@ManyToOne
-	public Address getAddresses() {
-		return addresses;
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setAddresses(Address addresses) {
-		this.addresses = addresses;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", lastName=" + lastName + ", address="
-				+ address + ", email=" + email + ", birth=" + birth + "]";
+		return "Person [id=" + id + ", lastName=" + lastName + ", email="
+				+ email + ", birth=" + birth + ", address=" + address + "]";
 	}
 
 }

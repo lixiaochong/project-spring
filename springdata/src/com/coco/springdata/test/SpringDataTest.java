@@ -24,11 +24,11 @@ public class SpringDataTest {
 		personRepository = ctx.getBean(PersonRepository.class);
 	}
 
-//	@Test
-//	public void testKeyWords2(){
-//		List<Person> persons = personRepository.getByAddressIdGreaterThan(1);
-//		System.out.println(persons);
-//	}
+	@Test
+	public void testKeyWords2(){
+		List<Person> persons = personRepository.getByAddressIdGreaterThan(1);
+		System.out.println(persons);
+	}
 	
 	@Test
 	public void testKeyWords() {
@@ -46,11 +46,11 @@ public class SpringDataTest {
 		System.out.println(persons);
 	}
 
-	@Test
-	public void testAdress() {
-		Person person = personRepository.getByAddress("aa");
-		System.out.println(person);
-	}
+//	@Test
+//	public void testAdress() {
+//		Person person = personRepository.getByAddress("aa");
+//		System.out.println(person);
+//	}
 
 	@Test
 	public void testHelloWorldSpringData() {

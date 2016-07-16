@@ -30,7 +30,7 @@
 	<classpathentry kind="lib" path="lib/spring-tx-4.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-web-4.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-webmvc-4.0.0.RELEASE.jar"/>
-	<classpathentry kind="lib" path="lib/spring-data-commons-1.6.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-data-commons-1.6.2.RELEASE.jar" sourcepath="E:/Java/open sources/spring-data-commons/spring-data-commons-1.6.2.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-data-jpa-1.4.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>

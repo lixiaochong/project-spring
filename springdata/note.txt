@@ -1,4 +1,4 @@
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personRepository': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property id found for type java.lang.String
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personRepository': FactoryBean threw exception on object creation; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property address found for type com.coco.springdata.Person
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:151)
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1514)
@@ -29,15 +29,9 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property id found for type java.lang.String
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property address found for type com.coco.springdata.Person
 	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:75)
 	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:327)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:307)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:330)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353)
 	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:353)
 	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:307)
 	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:271)

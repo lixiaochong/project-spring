@@ -13,7 +13,7 @@ public interface PersonRepository extends Repository<Person, Integer>{
 	Person getByLastName(String lastName);
 	
 	//根据 address 来获取对应的 Person
-	Person getByAddress(String adress);
+//	Person getByAddress(String adress);
 	
 	//WHERE LASTNAME LIKE ?% AND ID < ?
 	List<Person> getByLastNameStartingWithAndIdLessThan(String lastName,Integer id);
